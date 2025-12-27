@@ -28,15 +28,20 @@ Built with **TypeScript**, designed for **developers, teams, and CI pipelines** 
 npm install -g github:faizcasm/env-validator
 
 
-#usage
-env-check .env #Automatically compares with .env.example if present.
+🚀 Usage
+Basic check
+env-check .env
 
-env-check .env --example .env.prod.example #custom check
 
-env-check .env --strict #strict mode check (fail on unused vars)
+Automatically compares with .env.example if present.
+
+Custom example file
+env-check .env --example .env.prod.example
+
+Strict mode (fail on unused vars)
+env-check .env --strict
 
 📤 Example Output
-
 ✖ Missing variables:
   - DATABASE_URL
 
@@ -47,8 +52,9 @@ env-check .env --strict #strict mode check (fail on unused vars)
   - JWT_SECRET
 
 
-🛠 Development:
-git clone https://github.com/faizcasm/env-validator.git
+
+🔧 Development
+git clone https://github.com/<your-username>/env-validator.git
 cd env-validator
 npm install
 npm run build
@@ -56,8 +62,7 @@ npm link
 env-check .env
 
 
-
-🧰 Tech Stack
+🛠 Tech Stack
 
 Node.js
 
@@ -65,9 +70,11 @@ TypeScript
 
 Commander
 
+Chalk
+
 dotenv
 
-chalk
+
 
 
 
